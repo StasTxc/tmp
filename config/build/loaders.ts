@@ -1,6 +1,6 @@
 import webpack from "webpack";
 
-export function buildLoaders(): Array<webpack.RuleSetRule> {
+export function loaders(): Array<webpack.RuleSetRule> {
   return [
     {
       test: /\.tsx?$/,
