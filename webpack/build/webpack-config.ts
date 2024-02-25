@@ -17,12 +17,12 @@ export function webpackConfig(options: BuildOptions): webpack.Configuration {
       clean: true,
     },
     module: {
-      rules: loaders(),
+      rules: loaders(options),
     },
     resolve: resolvers(),
-    plugins: plugins(paths.htmlTemplate),
+    plugins: plugins(options),
     // Помогает по stack trace отследить ошибку в конкретном месте
     devtool: isDev ? 'inline-source-map' : undefined,
-    devServer: isDev ? devServer(port) : undefined,
+    devServer: isDev ? devServer(options) : undefined,
   }
 }
