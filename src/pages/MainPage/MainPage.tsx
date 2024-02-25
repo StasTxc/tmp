@@ -1,6 +1,6 @@
 import {Counter} from "../../components/Counter";
 
-export const MainPage = () => {
+const MainPage = () => {
   return (
     <>
       <div>Hello world!</div>
@@ -8,3 +8,5 @@ export const MainPage = () => {
     </>
   )
 }
+
+export default MainPage;
