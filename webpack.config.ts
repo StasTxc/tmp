@@ -1,10 +1,10 @@
 import path from 'path';
 import webpack from 'webpack';
-import {webpackConfig} from "./config/build/webpack-config";
-import {BuildPaths, EnvironmentVariables} from "./config/build/types/config";
+import {webpackConfig} from "./webpack/build/webpack-config";
+import {BuildPaths, EnvironmentVariables} from "./webpack/build/types/config";
 
 const paths: BuildPaths = {
-  entry: path.resolve(__dirname, 'src', 'index.ts'),
+  entry: path.resolve(__dirname, 'src', 'index.tsx'),
   output: path.resolve(__dirname, 'dist'),
   htmlTemplate: path.resolve(__dirname, 'public', 'index.html'),
 }
