@@ -1,0 +1,17 @@
+@use "sass:list";
+
+// font-family
+$font-family-main: Roboto, sans-serif;
+
+// font-sizes
+$font-size-m: 16px;
+$font-size-l: 24px;
+
+// line-heights
+$line-height-m: 24px;
+$line-height-l: 32px;
+
+//fonts
+
+$font-m: list.slash($font-size-m, $line-height-m) $font-family-main;
+$font-l: list.slash($font-size-l, $line-height-l) $font-family-main;

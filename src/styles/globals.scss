@@ -1,3 +1,6 @@
+@import "variables";
+@import "themes";
+
 html,
 body {
   margin: 0;
@@ -8,7 +11,6 @@ body {
 }
 
 #root {
+  font: $font-m;
   height: 100%;
-  color: #FFFFFF;
-  background: #23272f;
 }

@@ -1,0 +1,7 @@
+@import "src/styles/variables/colors";
+
+.app.main {
+  --bg-color: #{$light};
+  --primary-color: #{$dark};
+  --secondary-color: #{$info};
+}
