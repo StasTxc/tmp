@@ -19,7 +19,7 @@ export function webpackConfig(options: BuildOptions): webpack.Configuration {
     module: {
       rules: loaders(options),
     },
-    resolve: resolvers(),
+    resolve: resolvers(options),
     plugins: plugins(options),
     // Помогает по stack trace отследить ошибку в конкретном месте
     devtool: isDev ? 'inline-source-map' : undefined,

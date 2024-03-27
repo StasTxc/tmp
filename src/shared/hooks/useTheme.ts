@@ -1,7 +1,7 @@
 import {ValueOf} from "../types/utils";
-import {Theme} from "../constants/theme";
+import {Theme} from "shared/constants/theme";
 import {useCallback, useContext} from "react";
-import {LOCAL_STORAGE_THEME_KEY, ThemeContext} from "../providers/ThemeProvider/ThemeContext";
+import {LOCAL_STORAGE_THEME_KEY, ThemeContext} from "app/providers/ThemeProvider/ThemeContext";
 
 export type UseThemeResult = {
   theme: ValueOf<typeof Theme>,

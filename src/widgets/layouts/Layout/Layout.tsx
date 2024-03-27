@@ -1,9 +1,9 @@
 import {NavLink, Outlet} from 'react-router-dom';
 import styles from './Layout.module.scss';
-import {ROUTES} from "../../routing/routes";
+import {ROUTES} from "shared/config/routes";
 import {Suspense} from "react";
 import cn from "classnames";
-import {useTheme} from "../../hooks/useTheme";
+import {useTheme} from "shared/hooks/useTheme";
 
 export const Layout = () => {
   const {theme, toggleTheme} = useTheme();

@@ -1,7 +1,7 @@
-import {LOCAL_STORAGE_THEME_KEY, ThemeContext} from "./ThemeContext";
+import {LOCAL_STORAGE_THEME_KEY, ThemeContext} from "../ThemeContext";
 import {FC, ReactNode, useMemo, useState} from "react";
-import {ValueOf} from "../../types/utils";
-import {Theme} from "../../constants/theme";
+import {ValueOf} from "../../../../shared/types/utils";
+import {Theme} from "shared/constants/theme";
 
 type ThemeProviderProps = {
   children?: ReactNode;

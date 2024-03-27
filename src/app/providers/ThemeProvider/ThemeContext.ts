@@ -1,6 +1,6 @@
 import {createContext} from "react";
-import {Theme} from "../../constants/theme";
-import {ValueOf} from "../../types/utils";
+import {Theme} from "shared/constants/theme";
+import {ValueOf} from "shared/types/utils";
 
 export const LOCAL_STORAGE_THEME_KEY = 'theme';
 

@@ -1,3 +1,3 @@
 import {lazy} from "react";
 
-export const InfoPage = lazy(() => import('./InfoPage'));
+export const InfoPage = lazy(() => import('./ui/InfoPage'));
