@@ -1,8 +1,8 @@
-import {createBrowserRouter, createRoutesFromElements, Route} from 'react-router-dom';
-import {Layout} from "widgets/layouts/Layout";
+import {createBrowserRouter, createRoutesFromElements, Outlet, Route} from 'react-router-dom';
+import {Layout} from "widgets/Layout";
 import {InfoPage} from "pages/InfoPage";
 import {MainPage} from "pages/MainPage";
-import {Providers} from "../providers/Providers";
+import {Providers} from "app/providers/Providers";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(

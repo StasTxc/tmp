@@ -28,5 +28,18 @@ export function loaders(options: BuildOptions): Array<webpack.RuleSetRule> {
     exclude: /node_modules/,
   }
 
-  return [typescriptLoader, cssLoader]
+  const svgLoader = {
+    test: /\.(svg)$/,
+    use: [
+      {loader: 'babel-loader'},
+      {
+        loader: 'react-svg-loader',
+        options: {
+          jsx: true,
+        },
+      },
+    ],
+  }
+
+  return [typescriptLoader, cssLoader, svgLoader]
 }

@@ -1,0 +1,27 @@
+@import "shared/uikit/styles/variables";
+
+.root {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.link {
+  text-decoration: none;
+  color: $light;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  transition: transform .1s ease-in;
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.active {
+  color: $secondary;
+  background: $secondary-light;
+}
+
+
