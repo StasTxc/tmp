@@ -1,0 +1,18 @@
+@import "shared/uikit/styles/variables";
+
+.root {
+  background: none;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:hover {
+    background: $secondary-light;
+  }
+
+  svg {
+    fill: #FFFFFF;
+  }
+}
