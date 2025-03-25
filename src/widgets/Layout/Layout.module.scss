@@ -1,7 +1,18 @@
 @import "shared/uikit/styles/themes";
+@import "shared/uikit/styles/variables";
 
 .app {
   height: 100%;
   background: var(--bg-color);
   color: var(--primary-color);
+}
+
+.body {
+  height: calc(100vh - ($header-height + 24px)); // Высота хедера + паддинг верхний и нижний
+  display: flex;
+}
+
+.page {
+  flex-grow: 1;
+  padding: 12px 24px;
 }

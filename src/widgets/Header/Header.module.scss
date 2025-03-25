@@ -1,7 +1,7 @@
 @import "shared/uikit/styles/variables";
 
 .root {
-  max-height: 150px;
+  height: $header-height;
   position: sticky;
   overflow: hidden;
   background: $light;
@@ -13,8 +13,8 @@
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .toggleThemeBtn {

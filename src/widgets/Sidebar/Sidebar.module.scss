@@ -1,0 +1,17 @@
+@import "shared/uikit/styles/themes";
+@import "shared/uikit/styles/variables";
+
+.root {
+  background: $dark;
+  color: $light;
+  max-width: 260px;
+  width: 100%;
+  transition: ease .3s max-width;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.collapsed {
+  max-width: 40px;
+  width: 100%;
+}
