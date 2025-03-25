@@ -12,15 +12,17 @@ export const Layout = () => {
   // TODO: Fallback component
   return (
     <div className={cn(styles.app, styles[theme])}>
-      <Header/>
-      <div className={styles.body}>
-        <Sidebar />
-        <Suspense fallback={<div>Loading...</div>}>
-          <div className={styles.page}>
-            <Outlet/>
-          </div>
-        </Suspense>
-      </div>
+      <Suspense fallback="">
+        <Header/>
+        <div className={styles.body}>
+          <Sidebar/>
+          <Suspense fallback={<div>Loading...</div>}>
+            <div className={styles.page}>
+              <Outlet/>
+            </div>
+          </Suspense>
+        </div>
+      </Suspense>
     </div>
   )
 }

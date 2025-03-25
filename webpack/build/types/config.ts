@@ -9,12 +9,12 @@ export interface BuildPaths {
 
 export interface EnvironmentVariables {
   MODE: BuildMode;
-  PORT: number;
+  PORT: string;
 }
 
 export interface BuildOptions {
   mode: BuildMode;
   paths: BuildPaths;
   isDev: boolean;
-  port: number;
+  port: string;
 }
