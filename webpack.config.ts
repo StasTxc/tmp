@@ -11,9 +11,9 @@ const paths: BuildPaths = {
 }
 
 export default (env: EnvironmentVariables): webpack.Configuration => {
-  const mode = env.mode || 'development';
+  const mode = env.MODE || 'development';
   const isDev = mode === 'development';
-  const port = env.port || 3000;
+  const port = env.PORT || 3000;
 
   return webpackConfig({
     mode,
